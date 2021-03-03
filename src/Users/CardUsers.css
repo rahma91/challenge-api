@@ -1,0 +1,14 @@
+.card{
+    height:"100%";
+    margin:"1%" ;
+    border : "1px solid white" ; 
+    padding:"3%";
+    margin: 20px;
+}
+.imgAvatar{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px;
+    margin: 10px 110px;
+}

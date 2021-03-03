@@ -1,13 +1,17 @@
 import React from 'react'
-import { Card } from "react-bootstrap";
+import { Card, } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import Avatar from "../assets/avatar.jpg"
 
 
-const ListUsers = ({user}) => {
+const CardUsers = ({user}) => {
     return (
-        <div>
-            <Card style={{ width: '18rem' }} >
-  <Card.Img variant="top" src={Avatar} />
+      
+        <div style={{width:"15rem"}}>
+        
+    <Link to={`/user/post/userId/${user.id}`}   >
+      <Card style={{ width: '18rem'  ,height:"24rem"   }}  >
+  <Card.Img className="imgAvatar"  variant="top" src={Avatar} />
   <Card.Body>
     <Card.Title>{user.id}</Card.Title>
     <Card.Title>{user.username}</Card.Title>
@@ -18,16 +22,15 @@ const ListUsers = ({user}) => {
       {user.company.name}
       {user.phone}
       {user.website}
-
-
-
-
     </Card.Text>
 
   </Card.Body>
 </Card>
+</Link>
+
+            
         </div>
     )
 }
 
-export default ListUsers
+export default CardUsers
