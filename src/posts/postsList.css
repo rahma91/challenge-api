@@ -1,7 +1,7 @@
-.styleUsers {
+.styleListe{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-      padding: 10%;
-  margin: 10% 10px;
+      padding: 2% 10%;
+  margin: 3% 10px;
 }

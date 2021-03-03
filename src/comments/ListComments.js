@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import axios from "axios";
 import CardComments from './CardComments';
+import '../comments/ListComments.css'
 
 const ListComments = () => {
     const [comments, setComments] = useState([])
@@ -21,12 +22,14 @@ const ListComments = () => {
             <div>
                 <h1>{comments.length} comments </h1>
             </div>
+            <div  className="styleUsers">
 
             {
                 comments.map(comment =>
                     <CardComments comment={comment} key={comment.id} />)
             }
-            
+                        </div>
+
         </div>
     )
 }

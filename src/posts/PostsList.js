@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import axios from "axios";
 import CardPosts from './CardPosts';
+import '../posts/postsList.css'
 
 
 const PostsList = () => {
@@ -18,7 +19,7 @@ const PostsList = () => {
       }, [])
 
     return (
-        <div>
+        <div className="styleListe">
             {
                 posts.map(post => 
                     <CardPosts post={post} key={post.id} />)

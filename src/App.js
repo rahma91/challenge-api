@@ -1,5 +1,4 @@
 import './App.css';
-import NavBar from './NavBar';
 import { Switch,Route } from 'react-router-dom';
 import UsersListe from './Users/UsersListe'
 import PostsList from './posts/PostsList';
@@ -13,7 +12,7 @@ function App() {
       
 
     <div className="App">
-      <NavBar />
+     
 
       <Switch>
           <Route exact path="/" component={UsersListe} />
